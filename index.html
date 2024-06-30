@@ -30,9 +30,9 @@
   <body class="bg-light">
 
     
-<div class="banner-wrap vh-100 vw-100 text-white">
+<div class="banner-wrap vh-100 vw-100 d-flex align-items-center justify-content-center text-white">
     <div class="overlay"></div>
-    <header class="px-5 p-3 text-white">
+    <header class="px-5 p-3 text-white fixed-top"> 
         <div>
           <h3 class="float-md-start text-center">Portfolio</h3>
           <nav class="nav nav-masthead justify-content-center float-md-end">
@@ -43,9 +43,10 @@
           </nav>
         </div>
       </header>
-  <main class="d-flex flex-column alighn-items-center justify-content-center h-75 text-center">
+
+  <main class="text-center">
     <h1 class="display-1">I am Lunga Dyantyi</h1>
-    <p class="lead">Fullstack Developer. Creative. Drone Technician</p>
+    <span class="lead" id="typed" ></span>
   
   </main>
 </div>
@@ -114,9 +115,9 @@
 </div>
 <div class="col-md-4 mt-3">
   <div class="card">
-      <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png" class="card-img-top" alt="...">
+      <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/Tesla.png" class="card-img-top" alt="...">
       <div class="card-body">
-       <h5 class="card-title">Netflix Landing Page</h5>
+       <h5 class="card-title">Tesla Landing Page</h5>
        <p class="card-text">Built this with HTML & CSS</p>
        <a href="https://lunga-nt-landing-page.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
        <a href="https://github.com/LungaDya/lungadyantyi-vc-netflix" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
@@ -125,9 +126,9 @@
 </div>
 <div class="col-md-4 mt-3">
   <div class="card">
-      <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png" class="card-img-top" alt="...">
+      <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/html_youtube.png" class="card-img-top" alt="...">
       <div class="card-body">
-       <h5 class="card-title">Netflix Landing Page</h5>
+       <h5 class="card-title">YouTube Landing Page</h5>
        <p class="card-text">Built this with HTML & CSS</p>
        <a href="https://lunga-nt-landing-page.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
        <a href="https://github.com/LungaDya/lungadyantyi-vc-netflix" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
@@ -136,10 +137,21 @@
 </div>
 <div class="col-md-4 mt-3">
   <div class="card">
-      <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/css_netflix.png" class="card-img-top" alt="...">
+      <img src="http://res.cloudinary.com/ak-124210/image/upload/v1642434078/yjnzwmihmhghxkwnb6n9.png" class="card-img-top" alt="...">
       <div class="card-body">
-       <h5 class="card-title">Netflix Landing Page</h5>
+       <h5 class="card-title">Twitter Landing Page</h5>
        <p class="card-text">Built this with HTML & CSS</p>
+       <a href="https://lunga-nt-landing-page.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
+       <a href="https://github.com/LungaDya/lungadyantyi-vc-netflix" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
+      </div>
+</div>
+</div>
+<div class="col-md-4 mt-3">
+  <div class="card">
+      <img src="https://zaiocontent.s3.eu-west-2.amazonaws.com/images+of+courses/bootstrap.png" class="card-img-top" alt="...">
+      <div class="card-body">
+       <h5 class="card-title">Portfolio</h5>
+       <p class="card-text">Built this with Bootsrap</p>
        <a href="https://lunga-nt-landing-page.netlify.app" target="_blank" class="btn btn-primary">View Website</a>
        <a href="https://github.com/LungaDya/lungadyantyi-vc-netflix" target="_blank" class="btn btn-outline-dark"><i class="bi bi-code-slash"></i></a>
       </div>
@@ -190,13 +202,38 @@
             </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form> 
-       
+      </div>
+      </div>
        
       </div>
         </div>
         </div>
 </section>
 
+<footer class="bg-dark text-center text-white p-3">
+<div class="container p-5">
+  <p>Developed by Lunga Dyantyi using Bootstrap</p>
+</div>
+
+</footer>
+
+<script>
+    window.addEventListener("scroll", () => {
+    const header = document.querySelector("header");
+    header.classList.toggle("scrolling", window.scrollY > 0)
+  })
+</script>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<script>
+  var typed = new Typed('#typed', {
+  strings: ['Fullstack Developer.',' Creative.',' Aviator.','Entrepreneur.'],
+  loop: true,
+  typeSpeed: 75,
+  shuffle: true
+  });
+</script>
  
 <!-- 
     
